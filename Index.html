@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Board</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Job Board</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Jobs</a></li>
+                <li><a href="#">Post a Job</a></li>
+                <li><a href="#">Employers</a></li>
+                <li><a href="#">Job Seekers</a></li>
+                <li><a href="#">Upload CV</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="search-bar">
+            <input type="text" id="jobSearch" placeholder="Search for jobs...">
+            <button onclick="searchJobs()">Search</button>
+        </section>
+        
+        <section class="job-listings" id="jobListings">
+            <h2>Job Opportunities</h2>
+        </section>
+        
+        <section class="employers">
+            <h2>Employers</h2>
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Company</th>
+                    <th>Location</th>
+                    <th>Contact</th>
+                </tr>
+                <tbody id="employersTable"></tbody>
+            </table>
+        </section>
+        
+        <section class="jobseekers">
+            <h2>Job Seekers</h2>
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Skills</th>
+                    <th>Location</th>
+                    <th>CV</th>
+                </tr>
+                <tbody id="jobseekersTable"></tbody>
+            </table>
+        </section>
+        
+        <section class="upload-cv">
+            <h2>Upload Your CV</h2>
+            <form id="cvUploadForm" enctype="multipart/form-data">
+                <input type="file" id="cvFile" name="cvFile" accept=".pdf,.doc,.docx">
+                <button type="submit">Upload</button>
+            </form>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Job Board. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
